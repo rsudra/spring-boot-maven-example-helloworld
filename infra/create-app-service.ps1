@@ -6,7 +6,7 @@ New-AzureRmAppServicePlan -ResourceGroupName "Soup2NutsRG" -Name "soup2nuts-app-
 
 New-AzureRmWebApp -ResourceGroupName "Soup2NutsRG" -Name "soup2nuts-app" -Location "West US" -AppServicePlan "soup2nuts-app-plan"
 
-$javaVersion="1.8"
+$javaVersion="1.11"
 $javaContainer="TOMCAT"
 $javaContainerVersion="9.0"
 #Configuring jdk and web container
