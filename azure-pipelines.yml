@@ -17,7 +17,6 @@ stages:
 
     steps:
     - task: Maven@3
-        displayName: 'Maven Package'
         inputs:
         mavenPomFile: 'pom.xml'
 
