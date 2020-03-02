@@ -22,8 +22,8 @@ steps:
     goals: 'package'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '''$(System.DefaultWorkingDirectory)'''
-    Contents: '''**/target/*.?(war|jar)'''
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: '**/target/*.?(war|jar)'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 # Publish build artifacts to Azure Pipelines or a Windows file share
 - task: PublishBuildArtifacts@1
