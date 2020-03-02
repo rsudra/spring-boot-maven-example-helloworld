@@ -1,7 +1,4 @@
 
-Install-Module AzureRM 
-
-Import-Module AzureRM
 
 New-AzureRmResourceGroup -Name "Soup2NutsRG" -Location "West US"
 
