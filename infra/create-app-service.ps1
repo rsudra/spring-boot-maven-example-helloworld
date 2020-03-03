@@ -16,4 +16,4 @@ $webappname="soup2nuts-app"
 $rgname="Soup2NutsRG"
 Set-AzureRmResource -PropertyObject $PropertiesObject -ResourceGroupName $rgname -ResourceType Microsoft.Web/sites/config -ResourceName $webappname/web -ApiVersion 2015-08-01 -Force
 
-# comment 1
+# comment 2
