@@ -31,6 +31,11 @@ steps:
     SourceFolder: infra
     TargetFolder: '$(Build.ArtifactStagingDirectory)/infra'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+
 # Publish build artifacts to Azure Pipelines or a Windows file share
 - task: PublishBuildArtifacts@1
   inputs:
